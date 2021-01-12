@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2021-01-07 07:59:00-0400
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Hosted a practical session on Biomedical Text Mining during the [AI4Health Winter School](https://ai4healthschool.org/practical-sessions/)!

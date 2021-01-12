@@ -2,23 +2,19 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a postdoctoral researcher at the [NaCTeM](http://www.nactem.ac.uk/) group of the [University of Manchester](https://www.cs.manchester.ac.uk/), working on Information Extraction and Natural Language Processing.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I recently received my PhD from the University of Manchester, advised by Professor [Sophia Ananiadou](http://www.nactem.ac.uk/staff/sophia.ananiadou). My research focused on extracting relations between named entities within and across sentences using graph-based neural models.
+During my PhD, I interned at [AIRC-AIST](https://www.airc.aist.go.jp/en/) in Japan, where I worked with Professor [Makoto Miwa](https://www.toyota-ti.ac.jp/Lab/Denshi/COIN/people/makoto.miwa/) on Relation and Event Extraction.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to that, I received my MEng and BSc in Electrical and Computer Engineering from the [National Technical University of Athens](https://www.ece.ntua.gr/en). In my diploma thesis, I employed topic-oriented semantic models to assist sentence-level polarity detection, under the supervision of Professor [Alexandros Potamianos](http://slp.cs.ece.ntua.gr/potam/).

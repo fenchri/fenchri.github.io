@@ -2,6 +2,32 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Additions
+
+.separation {
+  margin-top: 1cm;
+}
+
+
+// Talks
+
+.talks table td {
+  font-size: 1rem;
+  color: var(--global-text-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.talks table th {
+  color: var(--global-text-color);
+  text-align: right;
+  width: 16%;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
@@ -159,10 +185,14 @@ a, table.table a {
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
+  padding: 5px;
 }
 
 .news table th {
   color: var(--global-text-color);
+  text-align: right;
+  width: 15%;
+  padding: 5px;
 }
 
 // Social (bottom)
@@ -170,7 +200,9 @@ a, table.table a {
 .social {
   text-align: center;
   .contact-icon {
-    font-size: 4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
     a {
       color: var(--global-icon-color);
       &:hover {
@@ -367,8 +399,8 @@ footer.sticky-bottom {
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 0.25rem;
+          padding-right: 0.25rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           &:hover {

@@ -3,30 +3,27 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Fenia
+middle_name: 
+last_name: Christopoulou
+email: fenia.christopoulou@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Hello! I'm Fenia, a postdoctoral researcher at the University of Manchester.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+baseurl:  # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
+navbar_fixed: false
+footer_fixed: false
 
 # Dimensions
-max_width: 800px
+max_width: 850px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -41,10 +38,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+github_username: fenchri # your GitHub user name
+twitter_username: fenchri # your Twitter handle
+linkedin_username: fenchri # your LinkedIn user name
+scholar_userid: nVKZdJkAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -55,7 +52,6 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
@@ -64,9 +60,9 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+# blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+# blog_description: a simple whitespace theme for academics
+# permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
@@ -130,8 +126,8 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Christopoulou
+  first_name: [Fenia]
 
   style: apa
   locale: en
@@ -158,7 +154,7 @@ enable_panelbear_analytics: false
 enable_mansory:             true
 enable_math:                true
 enable_tooltips:            false
-enable_darkmode:            true
+enable_darkmode:            false
 show_social_icons:          false
 
 # -----------------------------------------------------------------------------
