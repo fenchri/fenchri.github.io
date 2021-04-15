@@ -22,12 +22,18 @@ layout: default
           {{ page.profile.address }}
         </div>
       {% endif %}
+      <p></p>
+      <div class="contact-list">
+        {% include social.html %}
+      </div>
     </div>
     {% endif %}
 
     <div class="clearfix">
       {{ content }}
     </div>
+
+    <p class='separation'></p>
 
     {% if page.news %}
       {% include news.html %}
