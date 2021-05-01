@@ -6,5 +6,5 @@ inline: true
 
 ---
 
-New paper to appear at NAACL 2021: "Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors" :tada: 
+New paper to appear at NAACL 2021: "[Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors](https://arxiv.org/abs/2104.08225)" :tada: 
 
