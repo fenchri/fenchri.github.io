@@ -46,7 +46,7 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-          
+
           {% if forloop.length == 1 %}
             {% if author_is_self %}
               <em>{{author.first}} {{author.last}}</em>
@@ -138,9 +138,9 @@
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">website</a>
     {% endif %}
     </div>
-    
+
     {% endif %}
-    
+
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
     <div class="abstract hidden">
