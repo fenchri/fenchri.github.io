@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /misc/
 title: misc
 index: 5
+permalink: /misc/
 nav: true
 ---
 

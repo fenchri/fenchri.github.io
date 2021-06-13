@@ -2,17 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+title: fenchri # the website title (if blank, full name will be used instead)
+email: fenia.christopoulou@gmail.com
 first_name: Fenia
 middle_name:
 last_name: Christopoulou
 email: fenia.christopoulou@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Hello! I'm Fenia, a postdoctoral researcher at the University of Manchester.
+  Hello! I'm Fenia =)
 footer_text: >
 
 url:  # the base hostname & protocol for your site
@@ -23,12 +20,11 @@ last_updated: true # set to true if you want to display last updated in the foot
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: false
+navbar_fixed: true
 footer_fixed: false
 
 # Dimensions
-max_width: 800px
-max_width: 850px
+max_width: 900px
 
 # TODO: add layout settings (single page vs. multi-page)
 

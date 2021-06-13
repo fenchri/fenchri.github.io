@@ -3,7 +3,7 @@
 
 <div class="row">
   {% if entry.abbr %}
-  <div class="col-sm-2 abbr">
+  <div class="col-sm-1 abbr">
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
     {% else %}
@@ -122,16 +122,16 @@
     {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
-      <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">poster</a>
+      <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-image"></i> poster</a>
       {% else %}
-      <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">poster</a>
+      <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-image"></i> poster</a>
       {% endif %}
     {% endif %}
     {% if entry.slides %}
       {% if entry.slides contains '://' %}
-      <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank">slides</a>
+      <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-file-powerpoint"></i> slides</a>
       {% else %}
-      <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">slides</a>
+      <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-file-powerpoint"></i> slides</a>
       {% endif %}
     {% endif %}
     {% if entry.website %}

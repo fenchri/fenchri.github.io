@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /publications/
 title: publications
+index: 2
+permalink: /publications/
 sections: [Conference Papers, Journals, Workshop Papers, Theses]
 nav: true
-index: 2
 ---
 
 You can also check my [Google Scholar](https://scholar.google.co.uk/citations?user=nVKZdJkAAAAJ&hl=en&authuser=1) page.
