@@ -1,115 +1,282 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{christopoulou2024sparsepo,
+  title={SparsePO: Controlling Preference Alignment of LLMs via Sparse Token Masks},
+  author={Christopoulou, Fenia and Cardenas*, Ronald and Lampouras, Gerasimos and Bou-Ammar, Haitham and Wang, Jun},
+  journal={arXiv preprint arXiv:2410.05102},
+  year={2024},
+  abstract={Preference Optimization (PO) has proven an effective step for aligning language models to human-desired behaviors. Current variants, following the offline Direct Preference Optimization objective, have focused on a strict setting where all tokens are contributing signals of KL divergence and rewards to the loss function. However, human preference is not affected by each word in a sequence equally but is often dependent on specific words or phrases, e.g. existence of toxic terms leads to non-preferred responses. Based on this observation, we argue that not all tokens should be weighted equally during PO and propose a flexible objective termed SparsePO, that aims to automatically learn to weight the KL divergence and reward corresponding to each token during PO training. We propose two different variants of weight-masks that can either be derived from the reference model itself or learned on the fly. Notably, our method induces sparsity in the learned masks, allowing the model to learn how to best weight reward and KL divergence contributions at the token level, learning an optimal level of mask sparsity. Extensive experiments on multiple domains, including sentiment control, dialogue, text summarization and text-to-code generation, illustrate that our approach assigns meaningful weights to tokens according to the target task, generates more responses with the desired preference and improves reasoning tasks by up to 2 percentage points compared to other token- and response-level PO methods. },
+  arxiv={https://arxiv.org/abs/2410.05102},
+  code={https://github.com/huawei-noah/HEBO/tree/master/SparsePO}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{fountas2024human,
+  title={Human-like episodic memory for infinite context llms},
+  author={Fountas, Zafeirios and Benfeghoul, Martin A and Oomerjee, Adnan and Christopoulou, Fenia and Lampouras, Gerasimos and Bou-Ammar, Haitham and Wang, Jun},
+  journal={arXiv preprint arXiv:2407.09450},
+  year={2024},
+  abstract={Large language models (LLMs) have shown remarkable capabilities, but still struggle with processing extensive contexts, limiting their ability to maintain coherence and accuracy over long sequences. In contrast, the human brain excels at organising and retrieving episodic experiences across vast temporal scales, spanning a lifetime. In this work, we introduce EM-LLM, a novel approach that integrates key aspects of human episodic memory and event cognition into LLMs with no fine-tuning, enabling them to handle practically infinite context lengths while maintaining computational efficiency. EM-LLM organises sequences of tokens into coherent episodic events using a combination of Bayesian surprise and graph-theoretic boundary refinement in an online fashion. When needed, these events are retrieved through a two-stage memory process, combining similarity-based and temporally contiguous retrieval for efficient and human-like access to relevant information. Experiments on the LongBench and InfiniteBench benchmarks demonstrate EM-LLM's superior performance, consistently outperforming the state-of-the-art retrieval model InfLLM across various baseline LLMs. In addition, EM-LLM outperforms its popular counterpart, RAG, in a wide range of tasks, while requiring similar resources. Notably, EM-LLM's performance even surpasses full-context models in most tasks, while successfully performing retrieval across 10 million tokens - a scale computationally infeasible for such models. Finally, our analysis reveals strong correlations between EM-LLM's event segmentation and human-perceived events, suggesting a bridge between this artificial system and its biological counterpart, thereby offering a novel computational framework for exploring human memory mechanisms. },
+  arxiv={https://arxiv.org/abs/2407.09450},
+  code={https://github.com/huawei-noah/HEBO/tree/master/EM-LLM},
+  website={}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{christopoulou-etal-2024-text,
+  abbr = {EACL},
+  title = "Text-to-Code Generation with Modality-relative Pre-training",
+  author = "Christopoulou, Fenia  and
+    Zhang, Guchun  and
+    Lampouras, Gerasimos",
+  editor = "Graham, Yvette  and
+    Purver, Matthew",
+  booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  month = mar,
+  year = "2024",
+  address = "St. Julian{'}s, Malta",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2024.eacl-long.72",
+  pages = "1194--1208",
+  abstract = "Large pre-trained language models have recently been expanded and applied to programming language tasks with great success, often through further pre-training of a strictly-natural language model{--}where training sequences typically contain both natural and (linearised) programming language. Such approaches effectively map both modalities of the sequence into the same embedding space. However, programming language keywords (e.g. {``}while{''}) often have very strictly defined semantics. As such, transfer learning from their natural language usage may not necessarily be beneficial to their code application and vise versa. Assuming an already pre-trained language model, in this work we investigate how sequence tokens can be adapted and represented differently, depending on which modality they belong to, and to the ultimate benefit of the downstream task. We experiment with separating embedding spaces between modalities during further model pre-training with modality-relative training objectives. We focus on text-to-code generation and observe consistent improvements across two backbone models and two test sets, measuring pass@$k$ and a novel incremental variation.",
+  slides = "https://docs.google.com/presentation/d/1asazGYiQnggjh_PmvIotRy7Za4swpKV8/edit?usp=drive_link&ouid=111586909786792254313&rtpof=true&sd=true",
+  code = "https://github.com/huawei-noah/noah-research/tree/master/NLP/text2code_mrpt",
+  video = "https://drive.google.com/file/d/14DXMp0vVSXqS-QYyea1E6xtsF5kRL8_b/view?usp=drive_link"
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@article{christopoulou2022pangu,
+  title={PanGu-Coder: Program Synthesis with Function-level Language Modeling},
+  author={Christopoulou, Fenia and Lampouras, Gerasimos and Gritta, Milan and Zhang, Guchun and Guo, Yinpeng and Li, Zhongqi and Zhang, Qi and Xiao, Meng and Shen, Bo and Li, Lin and others},
+  journal={arXiv preprint arXiv:2207.11280},
+  year={2022}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{inan2022knowledge,
+  title={Knowledge graph enrichment of a semantic search system for construction safety},
+  author={Inan, Emrah and Thompson, Paul and Christopoulou, Fenia and Yates, Tim and Ananiadou, Sophia},
+  booktitle={Proceedings of SAI Intelligent Systems Conference},
+  pages={33--52},
+  year={2022},
+  organization={Springer}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{whitehouse-etal-2022-entitycs,
+  abbr = {EMNLP}, 
+  title = "{E}ntity{CS}: Improving Zero-Shot Cross-lingual Transfer with Entity-Centric Code Switching",
+  author = "Whitehouse, Chenxi  and
+    Christopoulou, Fenia  and
+    Iacobacci, Ignacio",
+  editor = "Goldberg, Yoav  and
+    Kozareva, Zornitsa  and
+    Zhang, Yue",
+  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+  month = dec,
+  year = "2022",
+  address = "Abu Dhabi, United Arab Emirates",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2022.findings-emnlp.499",
+  doi = "10.18653/v1/2022.findings-emnlp.499",
+  pages = "6698--6714",
+  abstract = "Accurate alignment between languages is fundamental for improving cross-lingual pre-trained language models (XLMs). Motivated by the natural phenomenon of code-switching (CS) in multilingual speakers, CS has been used as an effective data augmentation method that offers language alignment at word- or phrase-level, in contrast to sentence-level via parallel instances. Existing approaches either use dictionaries or parallel sentences with word-alignment to generate CS data by randomly switching words in a sentence. However, such methods can be suboptimal as dictionaries disregard semantics, and syntax might become invalid after random word switching. In this work, we propose EntityCS, a method that focuses on Entity-level Code-Switching to capture fine-grained cross-lingual semantics without corrupting syntax. We use Wikidata and the English Wikipedia to construct an entity-centric CS corpus by switching entities to their counterparts in other languages. We further propose entity-oriented masking strategies during intermediate model training on the EntityCS corpus for improving entity prediction. Evaluation of the trained models on four entity-centric downstream tasks shows consistent improvements over the baseline with a notable increase of 10{\%} in Fact Retrieval. We release the corpus and models to assist research on code-switching and enriching XLMs with external knowledge.",
+  poster = "https://drive.google.com/file/d/1mNYeWmYXL9769mPADd65q-r7A-27ASHC/view?usp=drive_link",
+  code = "https://github.com/huawei-noah/noah-research/tree/master/NLP/EntityCS"
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{christopoulou-etal-2022-training,
+  abbr = {EMNLP}, 
+  title = "Training Dynamics for Curriculum Learning: A Study on Monolingual and Cross-lingual {NLU}",
+  author = "Christopoulou, Fenia  and
+    Lampouras, Gerasimos  and
+    Iacobacci, Ignacio",
+  editor = "Goldberg, Yoav  and
+    Kozareva, Zornitsa  and
+    Zhang, Yue",
+  booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+  month = dec,
+  year = "2022",
+  address = "Abu Dhabi, United Arab Emirates",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2022.emnlp-main.167",
+  doi = "10.18653/v1/2022.emnlp-main.167",
+  pages = "2595--2611",
+  abstract = "Curriculum Learning (CL) is a technique of training models via ranking examples in a typically increasing difficulty trend with the aim of accelerating convergence and improving generalisability. Current approaches for Natural Language Understanding (NLU) tasks use CL to improve in-distribution data performance often via heuristic-oriented or task-agnostic difficulties. In this work, instead, we employ CL for NLU by taking advantage of training dynamics as difficulty metrics, i.e., statistics that measure the behavior of the model at hand on specific task-data instances during training and propose modifications of existing CL schedulers based on these statistics. Differently from existing works, we focus on evaluating models on in-distribution (ID), out-of-distribution (OOD) as well as zero-shot (ZS) cross-lingual transfer datasets. We show across several NLU tasks that CL with training dynamics can result in better performance mostly on zero-shot cross-lingual transfer and OOD settings with improvements up by 8.5{\%} in certain cases. Overall, experiments indicate that training dynamics can lead to better performing models with smoother training compared to other difficulty metrics while being 20{\%} faster on average. In addition, through analysis we shed light on the correlations of task-specific versus task-agnostic metrics.",
+  slides = "https://docs.google.com/presentation/d/1kyk7FaCSAV73rzqLLotCfmVPjjQxKicL/edit?usp=drive_link&ouid=111586909786792254313&rtpof=true&sd=true",
+  code = "https://github.com/huawei-noah/noah-research/tree/master/NLP/TD4CL",
+  video = "https://drive.google.com/file/d/1S8577muqlYm42GSeQGHf646W7lVMiNVa/view?usp=drive_link"
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@inproceedings{christopoulou-etal-2021-distantly,
+  abbr = {NAACL},
+  title = "Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors",
+  author = "Christopoulou, Fenia  and
+    Miwa, Makoto  and
+    Ananiadou, Sophia",
+  editor = "Toutanova, Kristina  and
+    Rumshisky, Anna  and
+    Zettlemoyer, Luke  and
+    Hakkani-Tur, Dilek  and
+    Beltagy, Iz  and
+    Bethard, Steven  and
+    Cotterell, Ryan  and
+    Chakraborty, Tanmoy  and
+    Zhou, Yichao",
+  booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+  month = jun,
+  year = "2021",
+  address = "Online",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2021.naacl-main.2",
+  doi = "10.18653/v1/2021.naacl-main.2",
+  pages = "11--26",
+  abstract = "We propose a multi-task, probabilistic approach to facilitate distantly supervised relation extraction by bringing closer the representations of sentences that contain the same Knowledge Base pairs. To achieve this, we bias the latent space of sentences via a Variational Autoencoder (VAE) that is trained jointly with a relation classifier. The latent code guides the pair representations and influences sentence reconstruction. Experimental results on two datasets created via distant supervision indicate that multi-task learning results in performance benefits. Additional exploration of employing Knowledge Base priors into theVAE reveals that the sentence space can be shifted towards that of the Knowledge Base, offering interpretability and further improving results.",
+  poster = "poster_naacl2021_DSRE_VAE_Priors.pdf",
+  code = "https://github.com/fenchri/dsre-vae"
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{christopoulou-etal-2019-connecting,
+  abbr = {EMNLP},
+  title = "Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs",
+  author = "Christopoulou, Fenia  and
+    Miwa, Makoto  and
+    Ananiadou, Sophia",
+  booktitle = "Proceedings of the Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  month = nov,
+  year = "2019",
+  address = "Hong Kong, China",
+  publisher = "Association for Computational Linguistics",
+  url = "https://www.aclweb.org/anthology/D19-1498",
+  doi = "10.18653/v1/D19-1498",
+  pages = "4925--4936",
+  abstract = "Document-level relation extraction is a complex human process that requires logical inference to extract relationships between named entities in text. Existing approaches use graph-based neural models with words as nodes and edges as relations between them, to encode relations across sentences. These models are node-based, i.e., they form pair representations based solely on the two target node representations. However, entity relations can be better expressed through unique edge representations formed as paths between nodes. We thus propose an edge-oriented graph neural model for document-level relation extraction. The model utilises different types of nodes and edges to create a document-level graph. An inference mechanism on the graph edges enables to learn intra- and inter-sentence relations using multi-instance learning internally. Experiments on two document-level biomedical datasets for chemical-disease and gene-disease associations show the usefulness of the proposed edge-oriented approach.",
+  poster = "poster_emnlp2019_Connecting_the_Dots.pdf",
+  code = "https://github.com/fenchri/edge-oriented-graph",
+}
+
+@inproceedings{sahu-etal-2019-inter,
+  abbr = {ACL},
+  title = "Inter-sentence Relation Extraction with Document-level Graph Convolutional Neural Network",
+  author = "Sahu, Sunil Kumar  and
+    Christopoulou, Fenia  and
+    Miwa, Makoto  and
+    Ananiadou, Sophia",
+  booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+  month = jul,
+  year = "2019",
+  address = "Florence, Italy",
+  publisher = "Association for Computational Linguistics",
+  url = "https://www.aclweb.org/anthology/P19-1423",
+  doi = "10.18653/v1/P19-1423",
+  pages = "4309--4316",
+  abstract = "Inter-sentence relation extraction deals with a number of complex semantic relationships in documents, which require local, non-local, syntactic and semantic dependencies. Existing methods do not fully exploit such dependencies. We present a novel inter-sentence relation extraction model that builds a labelled edge graph convolutional neural network model on a document-level graph. The graph is constructed using various inter- and intra-sentence dependencies to capture local and non-local dependency information. In order to predict the relation of an entity pair, we utilise multi-instance learning with bi-affine pairwise scoring. Experimental results show that our model achieves comparable performance to the state-of-the-art neural models on two biochemistry datasets. Our analysis shows that all the types in the graph are effective for inter-sentence relation extraction.",
+  slides = "slides_acl2019_Inter_sentence_Relation_Extraction_with_Graph_CNN.pdf",
+  video = "https://vimeo.com/385201042",
+}
+
+@inproceedings{christopoulou-etal-2018-walk,
+  abbr = {ACL},
+  title = "A Walk-based Model on Entity Graphs for Relation Extraction",
+  author = "Christopoulou, Fenia  and
+    Miwa, Makoto  and
+    Ananiadou, Sophia",
+	booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+	month = jul,
+	year = "2018",
+	address = "Melbourne, Australia",
+	publisher = "Association for Computational Linguistics",
+	url = "https://www.aclweb.org/anthology/P18-2014",
+	doi = "10.18653/v1/P18-2014",
+	pages = "81--88",
+	abstract = "We present a novel graph-based neural network model for relation extraction. Our model treats multiple pairs in a sentence simultaneously and considers interactions among them. All the entities in a sentence are placed as nodes in a fully-connected graph structure. The edges are represented with position-aware contexts around the entity pairs. In order to consider different relation paths between two entities, we construct up to $l$-length walks between each pair. The resulting walks are merged and iteratively used to update the edge representations into longer walks representations. We show that the model achieves performance comparable to the state-of-the-art systems on the ACE 2005 dataset without using any external tools.",
+	code = "https://github.com/fenchri/walk-based-re",
+	poster = "https://www.aclweb.org/anthology/attachments/P18-2014.Poster.pdf",
+}
+
+@inproceedings{christopoulou-etal-2018-mixture,
+	abbr = {ICSC},
+	author = "Christopoulou, Fenia and Briakou, Eleftheria and Iosif, Elias and Potamianos, Alexandros",
+	booktitle = "Proceedings of the 12th IEEE International Conference on Semantic Computing (ICSC)",
+	title = "Mixture of Topic-Based Distributional Semantic and Affective Models",
+	year = "2018",
+	volume={},
+	number={},
+	pages = "203-210",
+	abstract = "Typically, Distributional Semantic Models (DSMs) estimate semantic similarity between words using a single-model, where the multiple senses of polysemous words are conflated in a single representation. Similarly, in textual affective analysis tasks, ambiguous words are usually not treated differently when estimating word affective scores. In this work, a semantic mixture model is proposed enabling the combination of word similarity scores estimated across multiple topic-specific DSMs (TDSMs). Based on the assumption that semantic similarity implies affective similarity, we extend this model to perform sentence-level affect estimation. The proposed model outperforms the baseline approach achieving state-of-the-art results for semantic similarity estimation and sentence-level polarity detection.",
+	keywords = "affective computing;mixture models;natural language processing;text analysis;ambiguous words;word affective scores;semantic mixture model;word similarity scores;affective similarity;sentence-level affect estimation;semantic similarity estimation;sentence-level polarity detection;affective models;multiple senses;polysemous words;single representation;textual affective analysis tasks;multiple topic-specific DSM;topic-based distributional semantic model;Distributional Semantic Models;Semantics;Computational modeling;Mixture models;Training;Feature extraction;Context modeling;Task analysis;Distributional Semantic Models;Topic Modeling;Semantic Similarity;Semantic Mixture Models;Affective Models",
+	doi = "10.1109/ICSC.2018.00036",
+	ISSN = {},
+	month = {Jan},
+	pdf = "https://ieeexplore-ieee-org.manchester.idm.oclc.org/stamp/stamp.jsp?tp=&arnumber=8334459",
+	code = "https://github.com/fenchri/mixture-tdsms",
+	slides = "prez_TDSMs_icsc2018.pdf",
+	poster = "poster_TDSMs_icsc2018.pdf"
+}
+
+
+% -----------------------------
+% JOURNALS
+% -----------------------------
+@article{christopoulou-etal-2020-adverse,
+	abbr = {JAMIA},
+  author = "Christopoulou, Fenia and Tran*, Thy Thy and Sahu, Sunil Kumar and Miwa, Makoto and Ananiadou, Sophia",
+  title = "{Adverse Drug Events and Medication Relation Extraction in Electronic Health Records with Ensemble Deep Learning Methods}",
+  journal = "Journal of the American Medical Informatics Association",
+  volume = "27",
+  number = "1",
+  pages = "39-46",
+  year = "2020",
+  month = "08",
+  abstract = "{Identification of drugs, associated medication entities, and interactions among them are crucial to prevent unwanted effects of drug therapy, known as adverse drug events. This article describes our participation to the n2c2 shared-task in extracting relations between medication-related entities in electronic health records.We proposed an ensemble approach for relation extraction and classification between drugs and medication-related entities. We incorporated state-of-the-art named-entity recognition (NER) models based on bidirectional long short-term memory (BiLSTM) networks and conditional random fields (CRF) for end-to-end extraction. We additionally developed separate models for intra- and inter-sentence relation extraction and combined them using an ensemble method. The intra-sentence models rely on bidirectional long short-term memory networks and attention mechanisms and are able to capture dependencies between multiple related pairs in the same sentence. For the inter-sentence relations, we adopted a neural architecture that utilizes the Transformer network to improve performance in longer sequences.Our team ranked third with a micro-averaged F1 score of 94.72\\% and 87.65\\% for relation and end-to-end relation extraction, respectively (Tracks 2 and 3). Our ensemble effectively takes advantages from our proposed models. Analysis of the reported results indicated that our proposed approach is more generalizable than the top-performing system, which employs additional training data- and corpus-driven processing techniques.We proposed a relation extraction system to identify relations between drugs and medication-related entities. The proposed approach is independent of external syntactic tools. Analysis showed that by using latent Drug-Drug interactions we were able to significantly improve the performance of non–Drug-Drug pairs in EHRs.}",
+  issn = "1527-974X",
+  doi = "10.1093/jamia/ocz101",
+  url = "https://doi.org/10.1093/jamia/ocz101",
+  html = "https://doi.org/10.1093/jamia/ocz101"
+}
+
+
+% -----------------------------
+% Workshop
+% -----------------------------
+@inproceedings{palogiannidi-etal-2016-tweester,
+	abbr = {SemEval},
+  title = "Tweester at {S}em{E}val-2016 Task 4: Sentiment Analysis in {T}witter Using Semantic-Affective Model Adaptation",
+  author = "Palogiannidi, Elisavet  and
+    Kolovou, Athanasia  and
+    Christopoulou, Fenia  and
+    Kokkinos, Filippos  and
+    Iosif, Elias  and
+    Malandrakis, Nikolaos  and
+    Papageorgiou, Haris  and
+    Narayanan, Shrikanth  and
+    Potamianos, Alexandros",
+  booktitle = "Proceedings of the 10th International Workshop on Semantic Evaluation ({S}em{E}val)",
+  month = jun,
+  year = "2016",
+  address = "San Diego, California",
+  publisher = "Association for Computational Linguistics",
+  url = "https://www.aclweb.org/anthology/S16-1023",
+  doi = "10.18653/v1/S16-1023",
+  pages = "155--163",
+  abstract = "We describe our submission to SemEval2016Task 4: Sentiment Analysis in Twitter. The proposed system ranked first for the sub-task B. Our system comprises of multiple in-dependent models such as neural networks, semantic-affective models and topic modeling that are combined in a probabilistic way. The novelty of the system is the employment of a topic modeling approach in order to adapt the semantic-affective space for each tweet. In addition, significant enhancements were madein the main system dealing with the data pre-processing and feature  extraction including the employment of word embeddings. Each model is used to predict a tweet's sentiment (positive, negative or neutral) and a late fusion scheme is adopted for the final decision.",
+  poster = "../assets/pdf/tweester_v3.pdf"
+}
+
+
+% -------------------------------
+% Theses
+% -------------------------------
+
+@thesis{christopoulou-2020-phd,
+  author = "Christopoulou, Fenia",
+  year = "2020",
+  title = "Textual Relation Extraction with Edge-oriented Graph Neural Models",
+  pdf = "https://www.research.manchester.ac.uk/portal/files/173349138/FULL_TEXT.PDF",
+  publisher="The University of Manchester"
+}
+
+@thesis{christopoulou-2016-master,
+  section = "Theses",
+  author = "Christopoulou, Fenia",
+  year = "2016",
+  title = "Sentence-level Sentiment Analysis using Topic Modeling",
+  pdf = "diploma_thesis.pdf",
+  publisher="National Technical Univerisity of Athens"
 }
