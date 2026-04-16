@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
 
 profile:
   align: right
@@ -10,15 +9,15 @@ profile:
   image_circular: false # crops the image to make it circular
 
 news: true # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
 
-I am an NLP Research Scientist at [Huawei Noah's Ark](https://www.noahlab.com.hk/#/home) lab based in London.
+I am a Member of Engineering (Applied Research) at [poolside](https://poolside.ai), where I work on reinforcement learning for reasoning models.
 
-My current interests lie in the intersection of natural and programming languages and how we can develop models that effectively handle both modalities. I am also interested in improving LLMs reasoning capabilities via memory mechanisms and continual learning taking inspiration from human cognition.
+Before that, I was working with [Huawei Noah's Ark](https://www.noahlab.com.hk/#/home) lab as part of their NLP team based in London, focusing on post-training from multilingual language models to code completion ones.
 
-Previously, I was a postdoctoral researcher at the [NaCTeM](http://www.nactem.ac.uk/) group of the [University of Manchester](https://www.cs.manchester.ac.uk/), where I also obtained my PhD, advised by Prof. [Sophia Ananiadou](http://www.nactem.ac.uk/staff/sophia.ananiadou). During this time, I was fortunate to work with Prof. [Makoto Miwa](https://www.toyota-ti.ac.jp/Lab/Denshi/COIN/people/makoto.miwa/). My research focused mainly on information extraction by recognising relations between named entities within and across sentences in fully- and distantly-supervised settings.
+I completed my PhD and postdoctoral research at the [NaCTeM](http://www.nactem.ac.uk/) group of the [University of Manchester](https://www.cs.manchester.ac.uk/), under the supervision of Prof. [Sophia Ananiadou](http://www.nactem.ac.uk/staff/sophia.ananiadou) and in collaboration with Prof. [Makoto Miwa](https://www.toyota-ti.ac.jp/Lab/Denshi/COIN/people/makoto.miwa/). My research centred on information extraction, with a focus on relation recognition between named entities within and across sentences in fully- and distantly-supervised settings.
 
 Prior to my PhD, I studied Electrical and Computer Engineering at the [National Technical University of Athens](https://www.ece.ntua.gr/en) (BEng & MEng).

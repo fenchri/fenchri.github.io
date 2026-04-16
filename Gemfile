@@ -20,6 +20,11 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'observer'
+    gem 'ostruct'
+    gem 'bigdecimal'
+    gem 'mutex_m'
+    gem 'drb'
 end
 group :other_plugins do
     gem 'css_parser'

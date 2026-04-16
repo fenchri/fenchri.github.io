@@ -702,6 +702,9 @@ footer.sticky-bottom {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
+          padding: 2px 1px;
+          font-size: 0.75rem;
+          letter-spacing: -0.05em;
 
           a {
             color: white;
@@ -871,6 +874,10 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
+  article h2 {
+    margin-top: 3rem;
+  }
+
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
@@ -1304,4 +1311,29 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// News list
+.news-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--global-theme-color);
+
+  li {
+    padding: 2px 0;
+    line-height: 1.5;
+  }
+
+  .news-date {
+    font-weight: 600;
+    white-space: nowrap;
+  }
 }

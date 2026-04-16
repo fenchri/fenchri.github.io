@@ -1,29 +1,40 @@
 ---
 ---
 
-@article{christopoulou2024sparsepo,
+@inproceedings{christopoulou-etal-2025-sparsepo,
+  abbr={EMNLP},
+  selected={true},
   title={SparsePO: Controlling Preference Alignment of LLMs via Sparse Token Masks},
-  author={Christopoulou, Fenia and Cardenas*, Ronald and Lampouras, Gerasimos and Bou-Ammar, Haitham and Wang, Jun},
-  journal={arXiv preprint arXiv:2410.05102},
-  year={2024},
-  abstract={Preference Optimization (PO) has proven an effective step for aligning language models to human-desired behaviors. Current variants, following the offline Direct Preference Optimization objective, have focused on a strict setting where all tokens are contributing signals of KL divergence and rewards to the loss function. However, human preference is not affected by each word in a sequence equally but is often dependent on specific words or phrases, e.g. existence of toxic terms leads to non-preferred responses. Based on this observation, we argue that not all tokens should be weighted equally during PO and propose a flexible objective termed SparsePO, that aims to automatically learn to weight the KL divergence and reward corresponding to each token during PO training. We propose two different variants of weight-masks that can either be derived from the reference model itself or learned on the fly. Notably, our method induces sparsity in the learned masks, allowing the model to learn how to best weight reward and KL divergence contributions at the token level, learning an optimal level of mask sparsity. Extensive experiments on multiple domains, including sentiment control, dialogue, text summarization and text-to-code generation, illustrate that our approach assigns meaningful weights to tokens according to the target task, generates more responses with the desired preference and improves reasoning tasks by up to 2 percentage points compared to other token- and response-level PO methods. },
-  arxiv={https://arxiv.org/abs/2410.05102},
+  author={Christopoulou*, Fenia and Cardenas*, Ronald and Lampouras, Gerasimos and Bou-Ammar, Haitham and Wang, Jun},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2025},
+  month=nov,
+  year={2025},
+  address={Suzhou, China},
+  publisher={Association for Computational Linguistics},
+  url={https://aclanthology.org/2025.findings-emnlp.1389},
+  doi={10.18653/v1/2025.findings-emnlp.1389},
+  pages={25477--25503},
+  abstract={Preference Optimization (PO) has proven an effective step for aligning language models to human-desired behaviors. Current variants, following the offline Direct Preference Optimization objective, have focused on a strict setting where all tokens are contributing signals of KL divergence and rewards to the loss function. However, human preference is not affected by each word in a sequence equally but is often dependent on specific words or phrases, e.g. existence of toxic terms leads to non-preferred responses. Based on this observation, we argue that not all tokens should be weighted equally during PO and propose a flexible objective termed SparsePO, that aims to automatically learn to weight the KL divergence and reward corresponding to each token during PO training. We propose two different variants of weight-masks that can either be derived from the reference model itself or learned on the fly. Notably, our method induces sparsity in the learned masks, allowing the model to learn how to best weight reward and KL divergence contributions at the token level, learning an optimal level of mask sparsity. Extensive experiments on multiple domains, including sentiment control, dialogue, text summarization and text-to-code generation, illustrate that our approach assigns meaningful weights to tokens according to the target task, generates more responses with the desired preference and improves reasoning tasks by up to 2 percentage points compared to other token- and response-level PO methods.},
+  arxiv={2410.05102},
   code={https://github.com/huawei-noah/HEBO/tree/master/SparsePO}
 }
 
-@article{fountas2024human,
-  title={Human-like episodic memory for infinite context llms},
+@inproceedings{fountas2025humaninspired,
+  abbr={ICLR},
+  title={Human-inspired Episodic Memory for Infinite Context {LLM}s},
   author={Fountas, Zafeirios and Benfeghoul, Martin A and Oomerjee, Adnan and Christopoulou, Fenia and Lampouras, Gerasimos and Bou-Ammar, Haitham and Wang, Jun},
-  journal={arXiv preprint arXiv:2407.09450},
-  year={2024},
-  abstract={Large language models (LLMs) have shown remarkable capabilities, but still struggle with processing extensive contexts, limiting their ability to maintain coherence and accuracy over long sequences. In contrast, the human brain excels at organising and retrieving episodic experiences across vast temporal scales, spanning a lifetime. In this work, we introduce EM-LLM, a novel approach that integrates key aspects of human episodic memory and event cognition into LLMs with no fine-tuning, enabling them to handle practically infinite context lengths while maintaining computational efficiency. EM-LLM organises sequences of tokens into coherent episodic events using a combination of Bayesian surprise and graph-theoretic boundary refinement in an online fashion. When needed, these events are retrieved through a two-stage memory process, combining similarity-based and temporally contiguous retrieval for efficient and human-like access to relevant information. Experiments on the LongBench and InfiniteBench benchmarks demonstrate EM-LLM's superior performance, consistently outperforming the state-of-the-art retrieval model InfLLM across various baseline LLMs. In addition, EM-LLM outperforms its popular counterpart, RAG, in a wide range of tasks, while requiring similar resources. Notably, EM-LLM's performance even surpasses full-context models in most tasks, while successfully performing retrieval across 10 million tokens - a scale computationally infeasible for such models. Finally, our analysis reveals strong correlations between EM-LLM's event segmentation and human-perceived events, suggesting a bridge between this artificial system and its biological counterpart, thereby offering a novel computational framework for exploring human memory mechanisms. },
-  arxiv={https://arxiv.org/abs/2407.09450},
-  code={https://github.com/huawei-noah/HEBO/tree/master/EM-LLM},
-  website={}
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  url={https://openreview.net/forum?id=BI2int5SAC},
+  abstract={Large language models (LLMs) have shown remarkable capabilities, but still struggle with processing extensive contexts, limiting their ability to maintain coherence and accuracy over long sequences. In contrast, the human brain excels at organising and retrieving episodic experiences across vast temporal scales, spanning a lifetime. In this work, we introduce EM-LLM, a novel approach that integrates key aspects of human episodic memory and event cognition into LLMs with no fine-tuning, enabling them to handle practically infinite context lengths while maintaining computational efficiency. EM-LLM organises sequences of tokens into coherent episodic events using a combination of Bayesian surprise and graph-theoretic boundary refinement in an online fashion. When needed, these events are retrieved through a two-stage memory process, combining similarity-based and temporally contiguous retrieval for efficient and human-like access to relevant information. Experiments on the LongBench and InfiniteBench benchmarks demonstrate EM-LLM's superior performance, consistently outperforming the state-of-the-art retrieval model InfLLM across various baseline LLMs. In addition, EM-LLM outperforms its popular counterpart, RAG, in a wide range of tasks, while requiring similar resources. Notably, EM-LLM's performance even surpasses full-context models in most tasks, while successfully performing retrieval across 10 million tokens - a scale computationally infeasible for such models. Finally, our analysis reveals strong correlations between EM-LLM's event segmentation and human-perceived events, suggesting a bridge between this artificial system and its biological counterpart, thereby offering a novel computational framework for exploring human memory mechanisms.},
+  arxiv={2407.09450},
+  code={https://github.com/em-llm/EM-LLM-model},
+  website={https://em-llm.github.io/}
 }
 
 @inproceedings{christopoulou-etal-2024-text,
   abbr = {EACL},
+  selected={true},
   title = "Text-to-Code Generation with Modality-relative Pre-training",
   author = "Christopoulou, Fenia  and
     Zhang, Guchun  and
@@ -106,6 +117,7 @@
 
 @inproceedings{christopoulou-etal-2021-distantly,
   abbr = {NAACL},
+  selected={true},
   title = "Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors",
   author = "Christopoulou, Fenia  and
     Miwa, Makoto  and
@@ -134,6 +146,7 @@
 
 @inproceedings{christopoulou-etal-2019-connecting,
   abbr = {EMNLP},
+  selected={true},
   title = "Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs",
   author = "Christopoulou, Fenia  and
     Miwa, Makoto  and

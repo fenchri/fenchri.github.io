@@ -3,7 +3,7 @@ layout: page
 title: misc  
 index: 4 
 permalink: /misc/  
-nav: true  
+nav: false  
 ---
 
 #### random
@@ -15,4 +15,4 @@ nav: true
 
 I enjoy traveling and have been lucky enough to visit places on the map!
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1B1h7RIx-ELVK9Zq37OxsCpjyBog_1nMp&ehbc=2E312F" width="640" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1B1h7RIx-ELVK9Zq37OxsCpjyBog_1nMp&ehbc=2E312F" width="640" height="480"></iframe>
